@@ -11,9 +11,9 @@ import (
 	"runtime"
 	"unsafe"
 
-	"github.com/gotk3/gotk3/cairo"
-	"github.com/gotk3/gotk3/gdk"
-	"github.com/gotk3/gotk3/glib"
+	"github.com/zkliuchaojie/gotk3/cairo"
+	"github.com/zkliuchaojie/gotk3/gdk"
+	"github.com/zkliuchaojie/gotk3/glib"
 )
 
 /*

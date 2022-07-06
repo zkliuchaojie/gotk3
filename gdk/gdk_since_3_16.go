@@ -28,7 +28,7 @@ import (
 	"errors"
 	"unsafe"
 
-	"github.com/gotk3/gotk3/glib"
+	"github.com/zkliuchaojie/gotk3/glib"
 )
 
 func init() {

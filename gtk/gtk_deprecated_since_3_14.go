@@ -1,3 +1,4 @@
+//go:build gtk_3_6 || gtk_3_8 || gtk_3_10 || gtk_3_12 || gtk_deprecated
 // +build gtk_3_6 gtk_3_8 gtk_3_10 gtk_3_12 gtk_deprecated
 
 package gtk
@@ -9,8 +10,8 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/gotk3/gotk3/gdk"
-	"github.com/gotk3/gotk3/glib"
+	"github.com/zkliuchaojie/gotk3/gdk"
+	"github.com/zkliuchaojie/gotk3/glib"
 )
 
 func init() {

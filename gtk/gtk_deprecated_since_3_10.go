@@ -19,6 +19,7 @@
 // 3.8 or earlier.  To target an earlier build build, use the build tag
 // gtk_MAJOR_MINOR.  For example, to target GTK 3.8, run
 // 'go build -tags gtk_3_8'.
+//go:build gtk_3_6 || gtk_3_8 || gtk_deprecated
 // +build gtk_3_6 gtk_3_8 gtk_deprecated
 
 package gtk
@@ -29,7 +30,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/gotk3/gotk3/glib"
+	"github.com/zkliuchaojie/gotk3/glib"
 )
 
 // ButtonNewFromStock is a wrapper around gtk_button_new_from_stock().

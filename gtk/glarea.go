@@ -1,4 +1,6 @@
+//go:build !gtk_3_6 && !gtk_3_8 && !gtk_3_10 && !gtk_3_12 && !gtk_3_14
 // +build !gtk_3_6,!gtk_3_8,!gtk_3_10,!gtk_3_12,!gtk_3_14
+
 // Supports building with gtk 3.16+
 
 /*
@@ -28,8 +30,8 @@ import (
 	"errors"
 	"unsafe"
 
-	"github.com/gotk3/gotk3/gdk"
-	"github.com/gotk3/gotk3/glib"
+	"github.com/zkliuchaojie/gotk3/gdk"
+	"github.com/zkliuchaojie/gotk3/glib"
 )
 
 func init() {

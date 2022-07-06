@@ -1,4 +1,6 @@
+//go:build !gtk_3_6 && !gtk_3_8 && !gtk_3_10 && !gtk_3_12 && !gtk_3_14 && !gtk_3_16 && !gtk_3_18 && !gtk_3_20
 // +build !gtk_3_6,!gtk_3_8,!gtk_3_10,!gtk_3_12,!gtk_3_14,!gtk_3_16,!gtk_3_18,!gtk_3_20
+
 // Supports building with gtk 3.22+
 
 // Copyright (c) 2013-2014 Conformal Systems <info@conformal.com>
@@ -25,7 +27,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/gotk3/gotk3/glib"
+	"github.com/zkliuchaojie/gotk3/glib"
 )
 
 func init() {

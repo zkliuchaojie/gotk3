@@ -1,3 +1,4 @@
+//go:build !gtk_3_6 && !gtk_3_8 && !gtk_3_10 && !gtk_3_12 && !gtk_3_14
 // +build !gtk_3_6,!gtk_3_8,!gtk_3_10,!gtk_3_12,!gtk_3_14
 
 // See: https://developer.gnome.org/gtk3/3.16/api-index-3-16.html
@@ -11,7 +12,7 @@ import (
 	"runtime"
 	"unsafe"
 
-	"github.com/gotk3/gotk3/glib"
+	"github.com/zkliuchaojie/gotk3/glib"
 )
 
 // PaperSizeNewFromIpp is a wrapper around gtk_paper_size_new_from_ipp().

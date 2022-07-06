@@ -1,4 +1,5 @@
-//+build gtk_3_6 gtk_3_8 gtk_3_10 gtk_3_12 gtk_3_14 gtk_3_16 gtk_3_18 gtk_deprecated
+//go:build gtk_3_6 || gtk_3_8 || gtk_3_10 || gtk_3_12 || gtk_3_14 || gtk_3_16 || gtk_3_18 || gtk_deprecated
+// +build gtk_3_6 gtk_3_8 gtk_3_10 gtk_3_12 gtk_3_14 gtk_3_16 gtk_3_18 gtk_deprecated
 
 package gdk
 
@@ -8,7 +9,7 @@ import (
 	"runtime"
 	"unsafe"
 
-	"github.com/gotk3/gotk3/glib"
+	"github.com/zkliuchaojie/gotk3/glib"
 )
 
 // Grab() is a wrapper around gdk_device_grab().

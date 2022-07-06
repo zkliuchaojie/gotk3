@@ -1,3 +1,4 @@
+//go:build !gtk_3_6
 // +build !gtk_3_6
 
 package gtk
@@ -8,9 +9,9 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/gotk3/gotk3/gdk"
-	"github.com/gotk3/gotk3/glib"
-	"github.com/gotk3/gotk3/internal/callback"
+	"github.com/zkliuchaojie/gotk3/gdk"
+	"github.com/zkliuchaojie/gotk3/glib"
+	"github.com/zkliuchaojie/gotk3/internal/callback"
 )
 
 //export goTickCallbacks

@@ -1,7 +1,9 @@
 // Same copyright and license as the rest of the files in this project
 // This file contains accelerator related functions and structures
 
+//go:build !gtk_3_6 && !gtk_3_8
 // +build !gtk_3_6,!gtk_3_8
+
 // not use this: go build -tags gtk_3_8'. Otherwise, if no build tags are used, GTK 3.10
 
 package gtk
@@ -14,11 +16,11 @@ import (
 	"errors"
 	"unsafe"
 
-	"github.com/gotk3/gotk3/cairo"
-	"github.com/gotk3/gotk3/gdk"
-	"github.com/gotk3/gotk3/glib"
-	"github.com/gotk3/gotk3/internal/callback"
-	"github.com/gotk3/gotk3/pango"
+	"github.com/zkliuchaojie/gotk3/cairo"
+	"github.com/zkliuchaojie/gotk3/gdk"
+	"github.com/zkliuchaojie/gotk3/glib"
+	"github.com/zkliuchaojie/gotk3/internal/callback"
+	"github.com/zkliuchaojie/gotk3/pango"
 )
 
 func init() {

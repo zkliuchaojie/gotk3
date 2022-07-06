@@ -1,5 +1,6 @@
 // Same copyright and license as the rest of the files in this project
 
+//go:build !gtk_3_6 && !gtk_3_8 && !gtk_3_10 && !gtk_3_12 && !gtk_3_14 && !gtk_3_16 && !gtk_3_18
 // +build !gtk_3_6,!gtk_3_8,!gtk_3_10,!gtk_3_12,!gtk_3_14,!gtk_3_16,!gtk_3_18
 
 package gtk
@@ -10,7 +11,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/gotk3/gotk3/glib"
+	"github.com/zkliuchaojie/gotk3/glib"
 )
 
 // SetHelpOverlay is a wrapper around gtk_application_window_set_help_overlay().

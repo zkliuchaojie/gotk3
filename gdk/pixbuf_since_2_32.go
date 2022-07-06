@@ -1,5 +1,6 @@
 // Same copyright and license as the rest of the files in this project
 
+//go:build !gdk_pixbuf_2_2 && !gdk_pixbuf_2_4 && !gdk_pixbuf_2_6 && !gdk_pixbuf_2_8 && !gdk_pixbuf_2_12 && !gdk_pixbuf_2_14 && !gdk_pixbuf_2_22 && !gdk_pixbuf_2_24 && !gdk_pixbuf_2_26 && !gdk_pixbuf_2_28 && !gdk_pixbuf_2_30
 // +build !gdk_pixbuf_2_2,!gdk_pixbuf_2_4,!gdk_pixbuf_2_6,!gdk_pixbuf_2_8,!gdk_pixbuf_2_12,!gdk_pixbuf_2_14,!gdk_pixbuf_2_22,!gdk_pixbuf_2_24,!gdk_pixbuf_2_26,!gdk_pixbuf_2_28,!gdk_pixbuf_2_30
 
 package gdk
@@ -13,7 +14,7 @@ import (
 	"runtime"
 	"unsafe"
 
-	"github.com/gotk3/gotk3/glib"
+	"github.com/zkliuchaojie/gotk3/glib"
 )
 
 // Image Data in Memory

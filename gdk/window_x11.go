@@ -1,5 +1,5 @@
-// +build linux
-// +build !no_x11
+//go:build linux && !no_x11
+// +build linux,!no_x11
 
 package gdk
 
@@ -9,7 +9,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/gotk3/gotk3/glib"
+	"github.com/zkliuchaojie/gotk3/glib"
 )
 
 // MoveToCurrentDesktop is a wrapper around gdk_x11_window_move_to_current_desktop().

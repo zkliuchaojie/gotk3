@@ -19,6 +19,7 @@
 // versions.  To target an older build, such as 3.8, use
 // 'go build -tags gtk_3_8'.  Otherwise, if no build tags are used, GTK 3.18
 // is assumed and this file is built.
+//go:build !gtk_3_6
 // +build !gtk_3_6
 
 package gtk
@@ -30,8 +31,8 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/gotk3/gotk3/gdk"
-	"github.com/gotk3/gotk3/internal/callback"
+	"github.com/zkliuchaojie/gotk3/gdk"
+	"github.com/zkliuchaojie/gotk3/internal/callback"
 )
 
 /*

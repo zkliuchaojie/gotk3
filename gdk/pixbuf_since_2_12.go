@@ -1,5 +1,6 @@
 // Same copyright and license as the rest of the files in this project
 
+//go:build !gdk_pixbuf_2_2 && !gdk_pixbuf_2_4 && !gdk_pixbuf_2_6 && !gdk_pixbuf_2_8
 // +build !gdk_pixbuf_2_2,!gdk_pixbuf_2_4,!gdk_pixbuf_2_6,!gdk_pixbuf_2_8
 
 package gdk
@@ -13,7 +14,7 @@ import (
 	"runtime"
 	"unsafe"
 
-	"github.com/gotk3/gotk3/glib"
+	"github.com/zkliuchaojie/gotk3/glib"
 )
 
 // Utilities

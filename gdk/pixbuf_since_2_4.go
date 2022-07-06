@@ -1,5 +1,6 @@
 // Same copyright and license as the rest of the files in this project
 
+//go:build !gdk_pixbuf_2_2
 // +build !gdk_pixbuf_2_2
 
 package gdk
@@ -20,8 +21,8 @@ import (
 	"strconv"
 	"unsafe"
 
-	"github.com/gotk3/gotk3/glib"
-	"github.com/gotk3/gotk3/internal/callback"
+	"github.com/zkliuchaojie/gotk3/glib"
+	"github.com/zkliuchaojie/gotk3/internal/callback"
 )
 
 // File saving

@@ -1,6 +1,7 @@
 // Same copyright and license as the rest of the files in this project
 // The code in this file is only for GTK+ version 3.16+, as well as Glib version 2.44+
 
+//go:build !gtk_3_6 && !gtk_3_8 && !gtk_3_10 && !gtk_3_12 && !gtk_3_14 && !glib_2_40 && !glib_2_42
 // +build !gtk_3_6,!gtk_3_8,!gtk_3_10,!gtk_3_12,!gtk_3_14,!glib_2_40,!glib_2_42
 
 package gtk
@@ -11,8 +12,8 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/gotk3/gotk3/internal/callback"
-	"github.com/gotk3/gotk3/glib"
+	"github.com/zkliuchaojie/gotk3/glib"
+	"github.com/zkliuchaojie/gotk3/internal/callback"
 )
 
 // BindModel is a wrapper around gtk_list_box_bind_model().

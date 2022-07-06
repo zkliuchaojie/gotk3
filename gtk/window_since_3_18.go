@@ -1,5 +1,6 @@
 // Same copyright and license as the rest of the files in this project
 
+//go:build !gtk_3_6 && !gtk_3_8 && !gtk_3_10 && !gtk_3_12 && !gtk_3_14 && !gtk_3_16
 // +build !gtk_3_6,!gtk_3_8,!gtk_3_10,!gtk_3_12,!gtk_3_14,!gtk_3_16
 
 package gtk
@@ -10,7 +11,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/gotk3/gotk3/gdk"
+	"github.com/zkliuchaojie/gotk3/gdk"
 )
 
 // FullscreenOnMonitor is a wrapper around gtk_window_fullscreen_on_monitor().

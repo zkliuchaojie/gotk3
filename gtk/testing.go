@@ -8,9 +8,9 @@ import (
 	"os"
 	"unsafe"
 
-	"github.com/gotk3/gotk3/gdk"
+	"github.com/zkliuchaojie/gotk3/gdk"
 
-	"github.com/gotk3/gotk3/glib"
+	"github.com/zkliuchaojie/gotk3/glib"
 )
 
 // TestFindLabel is a wrapper around gtk_test_find_label().

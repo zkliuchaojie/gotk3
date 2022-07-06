@@ -1,5 +1,6 @@
 // Same copyright and license as the rest of the files in this project
 
+//go:build !gtk_3_6 && !gtk_3_8 && !gtk_3_10 && !gtk_3_12 && !gtk_3_14
 // +build !gtk_3_6,!gtk_3_8,!gtk_3_10,!gtk_3_12,!gtk_3_14
 
 // Package gtk_test is a separate package for unit tests.
@@ -10,7 +11,7 @@ package gtk_test
 import (
 	"testing"
 
-	"github.com/gotk3/gotk3/gtk"
+	"github.com/zkliuchaojie/gotk3/gtk"
 )
 
 func TestWindowGetSetTitlebar(t *testing.T) {

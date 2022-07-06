@@ -3,7 +3,7 @@ package callback
 import (
 	"sync"
 
-	"github.com/gotk3/gotk3/internal/slab"
+	"github.com/zkliuchaojie/gotk3/internal/slab"
 )
 
 var (

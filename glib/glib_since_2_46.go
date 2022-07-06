@@ -1,5 +1,6 @@
 // Same copyright and license as the rest of the files in this project
 
+//go:build !glib_2_40 && !glib_2_42 && !glib_2_44
 // +build !glib_2_40,!glib_2_42,!glib_2_44
 
 package glib
@@ -11,7 +12,7 @@ package glib
 // #include "glib_since_2_44.go.h"
 // #include "glib_since_2_46.go.h"
 import "C"
-import "github.com/gotk3/gotk3/internal/callback"
+import "github.com/zkliuchaojie/gotk3/internal/callback"
 
 /*
  * GListStore

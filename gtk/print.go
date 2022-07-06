@@ -9,10 +9,10 @@ import (
 	"runtime"
 	"unsafe"
 
-	"github.com/gotk3/gotk3/cairo"
-	"github.com/gotk3/gotk3/glib"
-	"github.com/gotk3/gotk3/internal/callback"
-	"github.com/gotk3/gotk3/pango"
+	"github.com/zkliuchaojie/gotk3/cairo"
+	"github.com/zkliuchaojie/gotk3/glib"
+	"github.com/zkliuchaojie/gotk3/internal/callback"
+	"github.com/zkliuchaojie/gotk3/pango"
 )
 
 func init() {

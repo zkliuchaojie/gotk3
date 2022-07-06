@@ -1,4 +1,5 @@
 // Same copyright and license as the rest of the files in this project
+//go:build !gtk_3_6 && !gtk_3_8 && !gtk_3_10 && !gtk_3_12
 // +build !gtk_3_6,!gtk_3_8,!gtk_3_10,!gtk_3_12
 
 package gtk
@@ -8,8 +9,8 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/gotk3/gotk3/glib"
-	"github.com/gotk3/gotk3/internal/callback"
+	"github.com/zkliuchaojie/gotk3/glib"
+	"github.com/zkliuchaojie/gotk3/internal/callback"
 )
 
 //export goListBoxForEachFuncs
