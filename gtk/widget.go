@@ -14,6 +14,7 @@ import (
 	"github.com/zkliuchaojie/gotk3/cairo"
 	"github.com/zkliuchaojie/gotk3/gdk"
 	"github.com/zkliuchaojie/gotk3/glib"
+	"github.com/zkliuchaojie/gotk3/pango"
 )
 
 /*
@@ -150,6 +151,10 @@ func (v *Widget) HideOnDelete() {
 // gtk_widget_create_pango_context().
 // gtk_widget_get_pango_context().
 // gtk_widget_create_pango_layout().
+
+func (v *Widget) GetPangoContext() *pango.Context {
+	return C.gtk_widget_get_pango_context(v.native())
+}
 
 // QueueDrawArea is a wrapper aroung gtk_widget_queue_draw_area().
 func (v *Widget) QueueDrawArea(x, y, w, h int) {
