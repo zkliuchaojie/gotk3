@@ -153,7 +153,12 @@ func (v *Widget) HideOnDelete() {
 // gtk_widget_create_pango_layout().
 
 func (v *Widget) GetPangoContext() *pango.Context {
-	return C.gtk_widget_get_pango_context(v.native())
+	c := C.gtk_widget_get_pango_context(v.native())
+	if c == nil {
+		return nil
+	}
+
+	return pango.WrapContext(uintptr(unsafe.Pointer(c)))
 }
 
 // QueueDrawArea is a wrapper aroung gtk_widget_queue_draw_area().
