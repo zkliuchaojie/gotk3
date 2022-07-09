@@ -521,9 +521,15 @@ func (v *TabArray) GetPositionsInPixels() bool {
 //void     pango_layout_get_pixel_extents    (PangoLayout    *layout,
 //					    PangoRectangle *ink_rect,
 //					    PangoRectangle *logical_rect);
-//void     pango_layout_get_pixel_size       (PangoLayout    *layout,
-//					    int            *width,
-//					    int            *height);
+
+// GetPixelSize is a wrapper around pango_layout_get_pixel_size().
+func (v *Layout) GetPixelSize() (int, int) {
+	var w, h C.int
+	C.pango_layout_get_pixel_size(v.native(), &w, &h)
+
+	return int(w), int(h)
+}
+
 //int      pango_layout_get_baseline         (PangoLayout    *layout);
 //
 //int              pango_layout_get_line_count       (PangoLayout    *layout);
